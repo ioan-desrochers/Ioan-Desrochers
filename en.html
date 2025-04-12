@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="icon/sapin-icon.svg">
+    <link rel="apple-touch-icon" href="icon/sapin-icon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sapino offre des produits canadiens à base de gomme de sapin baumier et huile essentielle de sapin baumier.">
+    <meta name="keywords" content="sapino, sapin baumier, gomme de sapin, sirop expectorant, remede rhume et grippe, balsam fir, flu remedies, Canada balsam.">
+    <title>Sapino | ENLISH</title>
+</head>
+<body>
+    <header>
+        <nav >
+            <a href="index.html" aria-label="Logo Sapino, retour à la page d'accueil"><img src="icon/sapino-logo.svg" alt=""></a>
+            <button aria-expanded="false" aria-label="Basculer le menu de navigation" aria-haspopup="true"><svg width="32" height="32" viewBox="0 0 100 100">
+                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+              </svg></button>
+            <ul>
+                <li><a href="produits.html">Nos produits</a></li>
+                <li><a href="entreprise.html">Entreprise</a></li>
+                <li><a href="sapin-baumier.html">Sapin baumier</a></li>
+                <li><a href="temoignages.html">Témoignages</a></li>
+                <li><a href="index.html">FR / <span class="active">EN</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <H1>ENGLISH</H1>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="index.html"><img src="icon/sapino-logo.svg" alt=""></a>
+          <div>
+              <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                  <li><a href="produits.html">Nos produits</a></li>
+                  <li><a href="entreprise.html">Entreprise</a></li>
+                  <li><a href="sapin-baumier.html">Sapin baumier</a></li>
+                  <li><a href="temoignages.html">Témoignages</a></li>
+                </ul>
+              </div>
+          
+              <div class="footer-contact">
+                <h4>Nous contacter</h4>
+                <address>
+                  600-18005 Rue Lapointe Local F<br>
+                  Mirabel, Québec, J7J 0G2<br>
+                  <a href="mailto:info@sapino.com">info@sapino.com</a>
+                </address>
+              </div>
+            </div>
+          </div>
+      
+          <p>© 2025 Sapino. Tous droits réservés.</p>
+    <script>
+      const menuButton = document.querySelector('nav button');
+      
+      menuButton.addEventListener('click', () => {
+          const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+          menuButton.setAttribute('aria-expanded', !expanded);
+        });
+    </script>
+</body>
+</html>
