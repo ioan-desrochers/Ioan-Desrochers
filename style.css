@@ -75,26 +75,189 @@ nav > ul a:hover {background-color: #8BEBA5;}
 
 body {font-family: "Poppins", sans-serif;}
 main {
-    width: min(1000px, calc(100% - 2rem));
+    width: min(60ch, calc(100% - 2rem));
     margin: auto;
     padding: 1em 0;
 }
 
-main p {
+main img {
+    border-radius: 0.5rem;
+    margin-bottom: 1em;
+    min-height: 250px;
+    width: auto;
+    object-fit: cover;
+}
+
+main > p {
     margin: 0.5em 0;
     max-width: 60ch;
     text-wrap: balance;
 }
+
+main .callout {
+    background-color: #eaeaea;
+    color: black;
+    padding: 1em 1em;
+    border-radius: 0.5em;
+    display: flex;
+    gap: 1em; /* adds spacing between icon and text */
+    align-items: center; /* vertical centering */
+}
+
+main .callout svg {
+    flex: 0 0 auto; /* do not grow or shrink */
+    width: 1.25rem;
+    height: 1.25rem;
+    display: inline-block;
+}
+
+
+
 main h1, main h2 {
     max-width: 40ch;
     text-wrap: balance;
 }
 
+main:has(#produits-container) {
+    width: min(1000px, calc(100% - 2rem));
+}
+
+#produits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust minmax value as needed */
+    gap: 1em;
+    padding-block: 1em;
+}
+
+#produits-container > article {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eaeaea;
+    border-radius: 1rem;
+    padding: 1em;
+    background: #f9fdf9;
+    color: inherit;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+#produits-container > article:hover {
+    border-color: #7ae296;
+    box-shadow: 0 4px 12px rgba(139, 235, 165, 0.2);
+}
+
+#produits-container > article img {
+    border-radius: 0.5rem;
+    margin-bottom: 1em;
+    min-height: 150px; /* Adjust as needed */
+    width: 100%;
+    object-fit: cover;
+}
+
+#produits-container > article a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#produits-container > article h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 0.25em;
+    padding-bottom: 0.25em;
+    border-bottom: 1px solid #eaeaea;
+    color: #1f2937;
+}
+
+#produits-container > article span {
+    color: #4b5563;
+    margin-top: auto; /* Push the span to the bottom */
+}
+
+#produits-container > article span strong {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#produits-container > article button {
+    background: #8BEBA5;
+    border: none;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    color: #1b1b1b;
+}
+
+#produits-container > article button:hover {
+    background: #7ae296;
+}
+
+blockquote {margin-bottom: 1em;}
+
+blockquote footer {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid #eaeaea;
+    font-style: normal;
+    font-weight: bold;
+}
+
+  
+  
+  article a:hover {
+    border-color: #7ae296;
+    box-shadow: 0 4px 12px rgba(139, 235, 165, 0.2);
+  }
+
+  a img {
+    margin: auto;
+  }
+  
+  
+  article h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 0.25em;
+    padding-bottom: 0.25em;
+    border-bottom: 1px solid #eaeaea;
+    color: #1f2937;
+  }
+  
+  a span {color: #4b5563;}
+  
+  span strong {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  article button {
+    background: #8BEBA5;
+    border: none;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    color: #1b1b1b;
+  }
+  
+  article button:hover {
+    background: #7ae296;
+  }
+  
+
 main strong {font-style: italic; color: black;}
-main p {color: #626262; margin-bottom: 3em;}
+main > p {color: #626262; margin-bottom: 3em;}
 
 
-footer {
+body > footer {
     background-color: #ffffff;
     border-top: 1px solid #eaeaea;
     font-family: sans-serif;
@@ -102,7 +265,7 @@ footer {
     padding: 3rem 1rem 1rem;
   }
 
-  footer img {
+  body >   footer img {
     height: 2.5em;
     width: auto;
   }
@@ -126,26 +289,26 @@ footer {
     gap: 2em 6em;
   }
   
-  footer h4 {
+  body >   footer h4 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     color: #32A647;
   }
   
-  footer ul, footer address {
+  body >   footer ul, footer address {
     list-style: none;
     padding: 0;
     margin: 0;
     font-style: normal;
   }
   
-  footer a {
+  body >   footer a {
     text-decoration: none;
     color: #626262;
     transition: color 0.3s;
   }
   
- footer p {
+  body >  footer p {
     text-align: center;
     margin-top: 2rem;
     font-size: 0.9rem;
