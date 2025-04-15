@@ -69,9 +69,6 @@ nav, main, .footer-content {
     margin: auto;
 }
 
-main {
-    margin-top: 4em;
-}
 
 nav ul {
     padding-block: 0.25em;
@@ -142,6 +139,7 @@ nav ul #language a::before, .callout::before, .cta::after, blockquote footer::be
 
 body {
     font-family: "Poppins", sans-serif;
+    position: relative;
 }
 
 main img {
@@ -342,7 +340,7 @@ footer p {
 @media screen and (max-width: 750px) {
 
     nav ul {
-        position: sticky;
+        position: fixed;
         inset: 0;
         width: 100%;
         display: grid;
@@ -358,10 +356,9 @@ footer p {
     #logo {
         grid-row: 1;
         display: flex;
-        width: calc(100% - 2rem);
         justify-content: space-between;
-        margin: 0;
         padding: 1em;
+        width: calc(100% - 2em);
         border-bottom: 1px solid var(--color-light);
     }
 
@@ -369,16 +366,27 @@ footer p {
         margin-left: 0.5em;
     }
 
+    nav:has([aria-expanded="false"]) {margin: 0; width: 100%;}
+
     nav ul:has([aria-expanded="false"]) li:not(#logo) {display: none;}
     nav ul:has([aria-expanded="false"]) {
         left: 0;
         right: 0;
         bottom: unset;
         display: flex;
+        position: sticky;
+
+        #logo {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+            width: calc(100% - 2em);
+        }
     }
+
+
 
     nav ul li:not(#logo) {font-size: 1.75em;}
     #logo button {display: block;}
     #language a {width: fit-content; font-size: 0.75em;}
-
 }
