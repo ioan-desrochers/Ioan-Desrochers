@@ -15,25 +15,33 @@
     <title>Sapino | Entreprise</title>
 </head>
 <body>
-    <header>
-        <nav >
-            <a href="index.html" aria-label="Logo Sapino, retour à la page d'accueil"><img src="icon/sapino-logo.svg" alt=""></a>
-            <button aria-expanded="false" aria-label="Basculer le menu de navigation" aria-haspopup="true"><svg width="32" height="32" viewBox="0 0 100 100">
-                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                <path class="line line2" d="M 20,50 H 80" />
-                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-              </svg></button>
-            <ul>
-                <li><a href="produits.html">Nos produits</a></li>
-                <li><a href="entreprise.html">Entreprise</a></li>
-                <li><a href="sapin-baumier.html">Sapin baumier</a></li>
-                <li><a href="temoignages.html">Témoignages</a></li>
-                <li><a href="en.html">EN / <span class="active">FR</span></a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <img src="icon/entreprise-image.webp" alt="Photo de l'entreprise Sapino">
+  <header>
+    <nav >
+        <ul>
+            <li><a href="produits.html">Nos produits</a></li>
+            <li><a href="sapin-baumier.html">Sapin baumier</a></li>
+            <li id="logo">
+                <a href="index.html" aria-label="Logo Sapino, retour à la page d'accueil"><img src="icon/logo.svg" alt="Retour à la page d'accueil"></a>
+                    <button aria-expanded="false" aria-label="Basculer le menu de navigation" aria-haspopup="true">
+                        <svg width="32" height="32" viewBox="0 0 100 100">
+                            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                            <path class="line line2" d="M 20,50 H 80" />
+                            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        </svg>
+                    </button>
+                </a>
+            </li>
+            <li><a href="entreprise.html">Entreprise</a></li>
+            <li><a href="temoignages.html">Témoignages</a></li>
+            <li id="language"><a href="en/homepage.html">EN</a></li>
+        </ul>
+    </nav>
+</header>
+    <main class="text">
+        <picture>
+          <source type="image/webp" srcset="image/webp/entreprise.webp">
+          <img src="image/jpg/entreprise.jpg" alt="Entreprise sapino">
+        </picture>
         <H1>Notre entreprise</H1>
         <p>Co-fondée au Québec en 1989 par Michel Desjardins et André Gauthier qui décidèrent en 1997 de commercialiser une ligne de produits naturels fait à base d’huile essentielle et de gomme de sapin baumier sous la marque de commerce Sapino. Déjà reconnue traditionnellement pour ses propriétés bienfaisantes au niveau des voies respiratoires par les autochtones  et premiers colons canadiens; la gomme de sapin n’a cessé depuis de susciter de plus en plus d’intérêts par plusieurs chercheurs tels ; biologistes et chimistes à savoir toutes les vertus de ce merveilleux produit qu'est la gomme de sapin baumier du Canada.</p>
         <h2>Mission</h2>
@@ -43,7 +51,7 @@
     </main>
     <footer class="footer">
         <div class="footer-content">
-            <a href="index.html"><img src="icon/sapino-logo.svg" alt=""></a>
+            <a href="index.html"><img src="icon/logo.svg" alt=""></a>
           <div>
               <div class="footer-links">
                 <h4>Navigation</h4>

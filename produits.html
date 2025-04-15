@@ -17,18 +17,23 @@
 <body>
     <header>
         <nav >
-            <a href="index.html" aria-label="Logo Sapino, retour à la page d'accueil"><img src="icon/sapino-logo.svg" alt=""></a>
-            <button aria-expanded="false" aria-label="Basculer le menu de navigation" aria-haspopup="true"><svg width="32" height="32" viewBox="0 0 100 100">
-                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                <path class="line line2" d="M 20,50 H 80" />
-                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-              </svg></button>
             <ul>
                 <li><a href="produits.html">Nos produits</a></li>
-                <li><a href="entreprise.html">Entreprise</a></li>
                 <li><a href="sapin-baumier.html">Sapin baumier</a></li>
+                <li id="logo">
+                    <a href="index.html" aria-label="Logo Sapino, retour à la page d'accueil"><img src="icon/logo.svg" alt="Retour à la page d'accueil"></a>
+                        <button aria-expanded="false" aria-label="Basculer le menu de navigation" aria-haspopup="true">
+                            <svg width="32" height="32" viewBox="0 0 100 100">
+                                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                                <path class="line line2" d="M 20,50 H 80" />
+                                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                            </svg>
+                        </button>
+                    </a>
+                </li>
+                <li><a href="entreprise.html">Entreprise</a></li>
                 <li><a href="temoignages.html">Témoignages</a></li>
-                <li><a href="en.html">EN / <span class="active">FR</span></a></li>
+                <li id="language"><a href="en/homepage.html">EN</a></li>
             </ul>
         </nav>
     </header>
@@ -36,52 +41,11 @@
         <h1>Nos produits</h1>
         <section id="produits-container">
             <article>
-                <a href="https://boutiquesantebienetre.ca/produit/mini-pastilles-de-sapin-baumier/">
-                    <img src="icon/PASTILLE-MINI.jpg" alt="Mini pastille fraîcheur">
-                    <h2>Mini pastille fraîcheur</h2>
-                    <span>
-                        <strong>4.99 $</strong>
-                        / Format: 40<abbr title="grammes">g</abbr>
-                    </span>
-                    <button type="button">Acheter</button>
-                </a href="produit1.html">
-            </article>
-            <article>
-                <a href="https://boutiquesantebienetre.ca/produit/gomme-de-sapin-baumier-sapino-60-gelules/">
-                    <img src="icon/gomme-de-sapin-baumier.jpg" alt="Mini pastille fraîcheur">
-                    <h2>Gomme de sapin naturel</h2>
-                    <span>
-                        <strong>21.99 $</strong>
-                        / Format: 30 capsules                    
-                    </span>
-                    <button type="button">Acheter</button>
-                </a href="produit1.html">
-            </article>
-            <article>
-                <a href="https://boutiquesantebienetre.ca/produit/sirop-sapin-et-echinacee-sapino-250-ml/">
-                    <img src="icon/SIROP-ECHINACEE.jpg" alt="Mini pastille fraîcheur">
-                    <h2>Sirop Sapino Sapin et Échinacée</h2>
-                    <span>
-                        <strong>17.99 $</strong>
-                        / Format: 250ml
-                    </span>
-                    <button type="button">Acheter</button>
-                </a href="produit1.html">
-            </article>
-            <article>
-                <a href="https://boutiquesantebienetre.ca/produit/sirop-dantan-sapino-500-ml/">
-                    <img src="icon/SIROP-EXTRA.jpg" alt="Mini pastille fraîcheur">
-                    <h2>Sirop d'antan Extra</h2>
-                    <span>
-                        <strong>21.99 $</strong>
-                        / Format: 500ml
-                    </span>
-                    <button type="button">Acheter</button>
-                </a>
-            </article>
-            <article>
                 <a href="https://boutiquesantebienetre.ca/produit/pastilles-sapin-et-echinacee-sapino-30-pastilles/">
-                    <img src="icon/PASTILLE-ECHINACEE.jpg">
+                    <picture>
+                        <source srcset="image/webp/pastille-echinacee.webp" type="image/webp">
+                        <img src="image/jpg/pastille-echinacee.jpg" alt="Pastille sapin & échinacée">
+                    </picture>
                     <h2>Pastille sapin & échinacée</h2>
                     <span>
                         <strong>8.99 $</strong>
@@ -92,18 +56,24 @@
             </article>
             <article>
                 <a href="https://boutiquesantebienetre.ca/produit/pastilles-sapin-baumier-extra-forte-sapino-30-pastilles/">
-                    <img src="icon/PASTILLE-EXTRA-FORTE.jpg" alt="Mini pastille fraîcheur">
+                    <picture>
+                        <source srcset="image/webp/pastille-extra.webp" type="image/webp">
+                        <img src="image/jpg/pastille-extra.jpg" alt="Pastilles Sapino extra-forte">
+                    </picture>
                     <h2>Pastilles Sapino extra-forte</h2>
                     <span>
                         <strong>8.99 $</strong>
-                        / Format: 30 pastilles                   
+                        / Format: 30 pastilles
                     </span>
                     <button type="button">Acheter</button>
                 </a>
             </article>
             <article>
                 <a href="https://boutiquesantebienetre.ca/produit/pastilles-sapin-thym-sapino-30-pastilles/">
-                    <img src="icon/Pastilles-Thym.jpg" alt="Mini pastille fraîcheur">
+                    <picture>
+                        <source srcset="image/webp/pastille-thym.webp" type="image/webp">
+                        <img src="image/jpg/pastille-thym.jpg" alt="Pastilles Sapin Baumier avec Thym">
+                    </picture>
                     <h2>Pastilles Sapin Baumier avec Thym</h2>
                     <span>
                         <strong>8.99 $</strong>
@@ -113,8 +83,39 @@
                 </a>
             </article>
             <article>
+                <a href="https://boutiquesantebienetre.ca/produit/mini-pastilles-de-sapin-baumier/">
+                    <picture>
+                        <source srcset="image/webp/pastille-mini.webp" type="image/webp">
+                        <img src="image/jpg/pastille-mini.jpg" alt="Mini pastille fraîcheur">
+                    </picture>
+                    <h2>Mini pastille fraîcheur</h2>
+                    <span>
+                        <strong>4.99 $</strong>
+                        / Format: 40<abbr title="grammes">g</abbr>
+                    </span>
+                    <button type="button">Acheter</button>
+                </a>
+            </article>
+            <article>
+                <a href="https://boutiquesantebienetre.ca/produit/gomme-de-sapin-baumier-sapino-60-gelules/">
+                    <picture>
+                        <source srcset="image/webp/gomme-60.webp" type="image/webp">
+                        <img src="image/jpg/gomme-60.jpg" alt="Gomme de sapin naturel">
+                    </picture>
+                    <h2>Gomme de sapin naturel</h2>
+                    <span>
+                        <strong>21.99 $</strong>
+                        / Format: 30 capsules
+                    </span>
+                    <button type="button">Acheter</button>
+                </a>
+            </article>
+            <article>
                 <a href="https://boutiquesantebienetre.ca/produit/gomme-de-sapin-baumier-sapino-120-gelules/">
-                    <img src="icon/Gomme60x-fr-1-600x600.jpg" alt="Mini pastille fraîcheur">
+                    <picture>
+                        <source srcset="image/webp/gomme-30.webp" type="image/webp">
+                        <img src="image/jpg/gomme-60.jpg" alt="Gomme de sapin baumier">
+                    </picture>
                     <h2>Gomme de sapin baumier</h2>
                     <span>
                         <strong>34.99 $</strong>
@@ -125,11 +126,42 @@
             </article>
             <article>
                 <a href="https://boutiquesantebienetre.ca/produit/sirop-enfant-sapino-100-ml/">
-                    <img src="icon/sirop-enfant-1-600x600.jpg">
-                    <h2>Sirop pour enfat</h2>
+                    <picture>
+                        <source srcset="image/webp/sirop-enfant.webp" type="image/webp">
+                        <img src="image/jpg/sirop-enfant.jpg" alt="Sirop pour enfant">
+                    </picture>
+                    <h2>Sirop pour enfant</h2>
                     <span>
                         <strong>11.99 $</strong>
                         / Format: 100ml
+                    </span>
+                    <button type="button">Acheter</button>
+                </a>
+            </article>
+            <article>
+                <a href="https://boutiquesantebienetre.ca/produit/sirop-sapin-et-echinacee-sapino-250-ml/">
+                    <picture>
+                        <source srcset="image/webp/sirop-echinacee.webp" type="image/webp">
+                        <img src="image/jpg/sirop-echinacee.jpg" alt="Sirop Sapino Sapin et Échinacée">
+                    </picture>
+                    <h2>Sirop Sapino Sapin et Échinacée</h2>
+                    <span>
+                        <strong>17.99 $</strong>
+                        / Format: 250ml
+                    </span>
+                    <button type="button">Acheter</button>
+                </a>
+            </article>
+            <article>
+                <a href="https://boutiquesantebienetre.ca/produit/sirop-dantan-sapino-500-ml/">
+                    <picture>
+                        <source srcset="image/webp/sirop-extra.webp" type="image/webp">
+                        <img src="image/jpg/sirop-extra.jpg" alt="Sirop d'antan Extra">
+                    </picture>
+                    <h2>Sirop d'antan Extra</h2>
+                    <span>
+                        <strong>21.99 $</strong>
+                        / Format: 500ml
                     </span>
                     <button type="button">Acheter</button>
                 </a>
@@ -138,7 +170,7 @@
     </main>
     <footer class="footer">
         <div class="footer-content">
-            <a href="index.html"><img src="icon/sapino-logo.svg" alt=""></a>
+            <a href="index.html"><img src="icon/logo.svg" alt=""></a>
           <div>
               <div class="footer-links">
                 <h4>Navigation</h4>
