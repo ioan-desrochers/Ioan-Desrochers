@@ -60,7 +60,7 @@ nav ul li a:not(:has(img)) {
 }
 
 nav ul #logo img {
-    height: 4em;
+    height: 3.5em;
     width: auto;
 }
 
@@ -296,7 +296,7 @@ footer {
   }
 
 footer img {
-    height: 2.5em;
+    height: 3.5em;
     width: auto;
 }
   
