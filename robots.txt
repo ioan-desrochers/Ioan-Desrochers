@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /icon/
+Disallow: /image/
+Allow: /
+
+Sitemap: https://sapino.com/sitemap.xml

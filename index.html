@@ -12,6 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sapino offre des produits canadiens à base de gomme de sapin baumier et huile essentielle de sapin baumier.">
     <meta name="keywords" content="sapino, sapin baumier, gomme de sapin, sirop expectorant, remede rhume et grippe, balsam fir, flu remedies, Canada balsam.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sapino.com/index.html">
     <title>Sapino</title>
 </head>
 <body>
@@ -33,12 +35,12 @@
                 </li>
                 <li><a href="entreprise.html">Entreprise</a></li>
                 <li><a href="temoignages.html">Témoignages</a></li>
-                <li id="language"><a href="en/homepage.html">EN</a></li>
+                <li id="language"><a href="en/homepage.html" aria-label="English version of Sapino">EN</a></li>
             </ul>
         </nav>
     </header>
     <div class="hero">
-            <img src="image/banniere-web-fr.gif" alt="Respirez mieux | Bandeau produit sapino">
+            <img src="image/gif/banniere-web-fr.gif" loading="lazy" alt="Respirez mieux | Bandeau produit sapino">
     </div>
     <main class="text">
         <a class="cta" href="https://www.boutiquesantebienetre.ca">Visitez notre boutique en ligne</a>
@@ -103,10 +105,10 @@
     </main>
     <footer class="footer">
         <div class="footer-content">
-            <a href="index.html"><img src="icon/logo.svg" alt=""></a>
+            <a href="index.html" aria-label="Logo sapino, retour à la page d'accueil"><img src="icon/logo.svg" alt="Logo sapino"></a>
           <div>
               <div class="footer-links">
-                <h4>Navigation</h4>
+                <P>Navigation</P>
                 <ul>
                   <li><a href="produits.html">Nos produits</a></li>
                   <li><a href="entreprise.html">Entreprise</a></li>
@@ -116,7 +118,7 @@
               </div>
           
               <div class="footer-contact">
-                <h4>Nous contacter</h4>
+                <P>Nous contacter</P>
                 <address>
                     <a href="mailto:info@sapino.com">info@sapino.com</a>
                   </address>
@@ -133,6 +135,13 @@
           const expanded = menuButton.getAttribute('aria-expanded') === 'true';
           menuButton.setAttribute('aria-expanded', !expanded);
         });
+
+        document.querySelectorAll('nav a').forEach(link => {
+        if (link.href === window.location.href) {
+            link.setAttribute('aria-current', 'page');
+        }
+        });
+
     </script>
 </body>
 </html>

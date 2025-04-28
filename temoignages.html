@@ -33,7 +33,7 @@
             </li>
             <li><a href="entreprise.html">Entreprise</a></li>
             <li><a href="temoignages.html">Témoignages</a></li>
-            <li id="language"><a href="en/homepage.html">EN</a></li>
+            <li id="language"><a href="en/testimonials.html">EN</a></li>
         </ul>
     </nav>
 </header>
@@ -122,7 +122,7 @@
             <a href="index.html"><img src="icon/logo.svg" alt=""></a>
           <div>
               <div class="footer-links">
-                <h4>Navigation</h4>
+                <p>Navigation</p>
                 <ul>
                   <li><a href="produits.html">Nos produits</a></li>
                   <li><a href="entreprise.html">Entreprise</a></li>
@@ -132,7 +132,7 @@
               </div>
           
               <div class="footer-contact">
-                <h4>Nous contacter</h4>
+                <p>Nous contacter</p>
                 <address>
                     <a href="mailto:info@sapino.com">info@sapino.com</a>
                   </address>
@@ -148,6 +148,13 @@
       menuButton.addEventListener('click', () => {
           const expanded = menuButton.getAttribute('aria-expanded') === 'true';
           menuButton.setAttribute('aria-expanded', !expanded);
+        });
+
+        
+        document.querySelectorAll('nav a').forEach(link => {
+        if (link.href === window.location.href) {
+            link.setAttribute('aria-current', 'page');
+        }
         });
     </script>
 </body>

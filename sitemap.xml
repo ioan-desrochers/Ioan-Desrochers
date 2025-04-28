@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Pages FR -->
+  <url><loc>https://ton-domaine.com/index.html</loc></url>
+  <url><loc>https://ton-domaine.com/produits.html</loc></url>
+  <url><loc>https://ton-domaine.com/entreprise.html</loc></url>
+  <url><loc>https://ton-domaine.com/temoignages.html</loc></url>
+  <url><loc>https://ton-domaine.com/sapin-baumier.html</loc></url>
+
+  <!-- Pages EN -->
+  <url><loc>https://ton-domaine.com/EN/homepage.html</loc></url>
+  <url><loc>https://ton-domaine.com/EN/product.html</loc></url>
+  <url><loc>https://ton-domaine.com/EN/balsam-fir.html</loc></url>
+  <url><loc>https://ton-domaine.com/EN/company.html</loc></url>
+  <url><loc>https://ton-domaine.com/EN/testimonials.html</loc></url>
+</urlset>

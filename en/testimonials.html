@@ -21,7 +21,7 @@
                 <li><a href="product.html">Products</a></li>
                 <li><a href="balsam-fir.html">Balsam fir</a></li>
                 <li id="logo">
-                    <a href="homepage.html" aria-label="Logo Sapino, retour à la page d'accueil"><img src="../icon/logo.svg" alt="Retour à la page d'accueil"></a>
+                    <a href="homepage.html" aria-label="Sapino logo, return to the home page"><img src="../icon/logo.svg" alt="Sapino logo"></a>
                         <button aria-expanded="false" aria-label="Basculer le menu de navigation" aria-haspopup="true">
                             <svg width="32" height="32" viewBox="0 0 100 100">
                                 <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
@@ -33,7 +33,7 @@
                 </li>
                 <li><a href="company.html">Company</a></li>
                 <li><a href="testimonials.html">Testimonials</a></li>
-                <li id="language"><a href="../index.html">FR</a></li>
+                <li id="language"><a href="../temoignages.html">FR</a></li>
             </ul>
         </nav>
     </header>
@@ -116,7 +116,7 @@
             <a href="homepage.html"><img src="../icon/logo.svg" alt=""></a>
           <div>
               <div class="footer-links">
-                <h4>Navigation</h4>
+                <p>Navigation</p>
                 <ul>
                   <li><a href="product.html">Products</a></li>
                   <li><a href="company.html">Company</a></li>
@@ -126,7 +126,7 @@
               </div>
           
               <div class="footer-contact">
-                <h4>Contact us</h4>
+                <p>Contact us</p>
                 <address>
                     <a href="mailto:info@sapino.com">info@sapino.com</a>
                   </address>
@@ -143,6 +143,13 @@
             const expanded = menuButton.getAttribute('aria-expanded') === 'true';
             menuButton.setAttribute('aria-expanded', !expanded);
           });
+
+          
+        document.querySelectorAll('nav a').forEach(link => {
+        if (link.href === window.location.href) {
+            link.setAttribute('aria-current', 'page');
+        }
+        });
       </script>
       </body>
 </html>

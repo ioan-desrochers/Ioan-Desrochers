@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sapino offre des produits canadiens à base de gomme de sapin baumier et huile essentielle de sapin baumier.">
+    <meta name="description" content="Les agences Prodex - Entreprise québécoise oeuvrant dans les produits naturels à base de sapin - Sapino">
     <meta name="keywords" content="sapino, sapin baumier, gomme de sapin, sirop expectorant, remede rhume et grippe, balsam fir, flu remedies, Canada balsam.">
     <title>Sapino | Entreprise</title>
 </head>
@@ -33,7 +33,7 @@
             </li>
             <li><a href="entreprise.html">Entreprise</a></li>
             <li><a href="temoignages.html">Témoignages</a></li>
-            <li id="language"><a href="en/homepage.html">EN</a></li>
+            <li id="language"><a href="en/company.html">EN</a></li>
         </ul>
     </nav>
 </header>
@@ -54,7 +54,7 @@
             <a href="index.html"><img src="icon/logo.svg" alt=""></a>
           <div>
               <div class="footer-links">
-                <h4>Navigation</h4>
+                <p>Navigation</p>
                 <ul>
                   <li><a href="produits.html">Nos produits</a></li>
                   <li><a href="entreprise.html">Entreprise</a></li>
@@ -64,7 +64,7 @@
               </div>
           
               <div class="footer-contact">
-                <h4>Nous contacter</h4>
+                <p>Nous contacter</p>
                 <address>
                   <a href="mailto:info@sapino.com">info@sapino.com</a>
                 </address>
@@ -80,6 +80,13 @@
       menuButton.addEventListener('click', () => {
           const expanded = menuButton.getAttribute('aria-expanded') === 'true';
           menuButton.setAttribute('aria-expanded', !expanded);
+        });
+
+        
+        document.querySelectorAll('nav a').forEach(link => {
+        if (link.href === window.location.href) {
+            link.setAttribute('aria-current', 'page');
+        }
         });
     </script>
 </body>

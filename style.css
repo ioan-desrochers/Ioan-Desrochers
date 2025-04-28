@@ -11,7 +11,9 @@ ul, ol {list-style: none; padding: 0; margin: 0;}
 button {background: none; border: none; padding: 0; font: inherit; color: inherit; cursor: pointer;}
 
 :root {
-    --color-primary: #8BEBA5;
+    --color-primary-light: rgb(232, 251, 237);
+    --color-secondary: #7ae296;
+    --color-primary: #30A646;
     --color-text: #1b1b1b;
     --color-light: #eaeaea;
     --color-subtle: #626262;
@@ -71,7 +73,7 @@ nav ul #logo {
     gap: 0.5em;
 }
 
-nav ul li a:not(:has(img)):hover {background-color: var(--color-primary);}
+nav ul li a:not(:has(img)):hover {background-color: var(--color-secondary);}
 #logo button {display: none;}
 nav ul #language a::before, .callout::before, .cta::after, blockquote footer::before { 
     content: ''; 
@@ -104,7 +106,7 @@ nav ul #language a::before, .callout::before, .cta::after, blockquote footer::be
 /* Main */
 
 .cta {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     padding: 1em 1.5em;
     display: flex;
     align-items: center;
@@ -139,8 +141,8 @@ main.text {width: min(60ch, calc(100% - 2rem));}
 
 h1, h2 {
     text-wrap: balance;
-    color: rgb(17, 153, 17);
-    background-color: rgba(139, 235, 165, 0.2);
+    color: var(--color-primary);
+    background-color: var(--color-primary-light);
     border-radius: 0.5em;
     padding: 1em;
     margin-block: 2em 1em;
@@ -176,8 +178,8 @@ details {
 }
 
 #produits-container > article:hover {
-    border-color: #7ae296;
-    box-shadow: 0 4px 12px rgba(139, 235, 165, 0.2);
+    border-color: var(--color-primary);
+    box-shadow: 0 4px 12px var(--color-primary-light);
 }
 
 #produits-container > article img {
@@ -218,7 +220,7 @@ details {
 }
 
 #produits-container > article button {
-    background: var(--color-primary);
+    background: var(--color-secondary);
     border: none;
     padding: 0.5em 1em;
     margin-top: 1em;
@@ -230,9 +232,73 @@ details {
     color: var(--color-text);
 }
 
-#produits-container > article button:hover {
-    background: #7ae296;
+.breadcrumbs {
+    color: var(--color-subtle);
+    span {
+        padding-inline: 1em;
+    }
 }
+
+.product-container {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    margin-block: 3em;
+
+    picture {
+        flex: 1 1 min(100%, 300px);
+        margin-bottom: 1em;
+    }
+
+    .product-info {
+        flex: 1 1 min(100%, 400px);
+        display: flex;
+        gap: 1em;
+        flex-direction: column;
+    }
+
+    h1 {
+        background: none;
+        padding: 0;
+        margin-block: auto 0;
+        width: fit-content;
+    }
+    a {
+        display: block;
+        background-color: var(--color-secondary);
+        padding: 0.75em;
+        text-align: center;
+        border-radius: 0.5em;
+        font-size: 1.25rem;
+        margin-bottom: auto;
+    }
+
+    strong {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    li {list-style: disc inside;}
+}
+
+.product-description {
+    margin-block: 2em;
+    padding: 1em;
+
+    h2 {
+        background: none;
+        padding: 0;
+        margin-block: 1em 0;
+        width: fit-content;
+    }
+
+    p:has(+ p) {
+        margin-block: 0.5em;
+    }
+}
+
+
+
 
 /* Testimonials */
 
@@ -314,18 +380,19 @@ footer img {
     gap: 2em 6em;
 }
   
-footer h4 {
+.footer-content p {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     color: #32A647;
+
 }
   
   
-footer p {
+footer > p {
     text-align: center;
     margin-top: 2rem;
     font-size: 0.9rem;
-    color: #999;
+    color: #515151;
     border-top: 1px solid var(--color-light);
     padding-top: 1rem;
 }

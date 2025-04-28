@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sapino offre des produits canadiens à base de gomme de sapin baumier et huile essentielle de sapin baumier.">
+    <meta name="description" content="Balsam fir gum ancestral use - Traditionnal medicinal use">
     <meta name="keywords" content="sapino, sapin baumier, gomme de sapin, sirop expectorant, remede rhume et grippe, balsam fir, flu remedies, Canada balsam.">
-    <title>Sapino</title>
+    <title>Sapino | Balsam fir</title>
 </head>
 <body>
   <header>
@@ -21,7 +21,7 @@
             <li><a href="product.html">Products</a></li>
             <li><a href="balsam-fir.html">Balsam fir</a></li>
             <li id="logo">
-                <a href="homepage.html" aria-label="Logo Sapino, retour à la page d'accueil"><img src="../icon/logo.svg" alt="Retour à la page d'accueil"></a>
+                <a href="homepage.html" aria-label="Sapino logo, return to the home page"><img src="../icon/logo.svg" alt="Sapino logo, return to the home page"></a>
                     <button aria-expanded="false" aria-label="Basculer le menu de navigation" aria-haspopup="true">
                         <svg width="32" height="32" viewBox="0 0 100 100">
                             <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
@@ -33,12 +33,13 @@
             </li>
             <li><a href="company.html">Company</a></li>
             <li><a href="testimonials.html">Testimonials</a></li>
-            <li id="language"><a href="../index.html">FR</a></li>
+            <li id="language"><a href="../sapin-baumier.html">FR</a></li>
         </ul>
     </nav>
 </header>
 <main class="text">
-  <img src="../image/jpg/sapin.jpg" alt="sapin baumier">
+  <source type="image/webp" srcset="../image/webp/sapin.webp">
+  <img src="../image/jpg/sapin.jpg" alt="Balsam fir">
   <h1>The Balsam Fir</h1>
   <h2>Origin</h2>
   <p>The Native people, who knew all the secrets of the boreal forest, taught the French settlers of Canada the virtues of balsam fir gum, as it was of great use to them against influenza, scurvy, cuts, and burns. Even the holes in their bark canoes were filled with this precious gum. The history of New France tells us that under the rule of Intendant Talon, trappers or coureurs des bois (woodsmen) harvested balsam fir gum and earned seasonal income from it. It was used to make shoes and build boats. Jean-Jacques Fortin, a passionate lover of the Baie St-Paul forests, learned from his father, a coureur des bois, how to tap the gum during the summer. He became its ultimate propagator.</p>
@@ -53,10 +54,10 @@
 </main>
     <footer class="footer">
         <div class="footer-content">
-            <a href="homepage.html"><img src="../icon/logo.svg" alt=""></a>
+            <a href="homepage.html"><img src="../icon/logo.svg" alt="Sapino logo, return to the home page"></a>
           <div>
               <div class="footer-links">
-                <h4>Navigation</h4>
+                <p>Navigation</p>
                 <ul>
                   <li><a href="product.html">Products</a></li>
                   <li><a href="company.html">Company</a></li>
@@ -66,7 +67,7 @@
               </div>
           
               <div class="footer-contact">
-                <h4>Contact us</h4>
+                <p>Contact us</p>
                 <address>
                   <a href="mailto:info@sapino.com">info@sapino.com</a>
                 </address>
@@ -83,6 +84,13 @@
             const expanded = menuButton.getAttribute('aria-expanded') === 'true';
             menuButton.setAttribute('aria-expanded', !expanded);
           });
+
+          
+        document.querySelectorAll('nav a').forEach(link => {
+        if (link.href === window.location.href) {
+            link.setAttribute('aria-current', 'page');
+        }
+        });
       </script>
       </body>
 </html>
