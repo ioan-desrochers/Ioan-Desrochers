@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteRule ^entreprise/?$ /t-about.aspx [R=301,L]
+RewriteRule ^sapin-baumier/?$ /t-balsam-fir.aspx [R=301,L]
+RewriteRule ^produits/?$ /c-2-all-products.aspx [R=301,L]
+RewriteRule ^temoignages/?$ /t-testimonials.aspx [R=301,L]
+RewriteRule ^produits/gomme-de-sapin-naturel-60/?$ /p-15-natural-balsam-fir-gum-60-soft-gels.aspx [R=301,L]
+RewriteRule ^produits/gomme-de-sapin-naturel-120/?$ /p-16-natural-balsam-fir-gum-120-soft-gels.aspx [R=301,L]
+RewriteRule ^produits/mini-pastille-fraicheur/?$ /p-42-sapino-freshness-lozenges-40g.aspx [R=301,L]
+RewriteRule ^produits/sirop-d-antan-extra/?$ /p-58-natural-oldtime-syrup-500ml.aspx [R=301,L]
+RewriteRule ^produits/sirop-echinacee/?$ /p-43-fir-echinacea-syrup-250-ml.aspx [R=301,L]
+RewriteRule ^produits/pastille-echinacee/?$ /p-31-fir-echinacea-lozenges-30-lozenges.aspx [R=301,L]
+RewriteRule ^produits/pastille-extra-forte/?$ /p-19-extra-strength-fir-lozenges-30-lozenges.aspx [R=301,L]

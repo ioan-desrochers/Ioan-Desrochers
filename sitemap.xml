@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Pages FR -->
-  <url><loc>https://ton-domaine.com/index.html</loc></url>
-  <url><loc>https://ton-domaine.com/produits.html</loc></url>
-  <url><loc>https://ton-domaine.com/entreprise.html</loc></url>
-  <url><loc>https://ton-domaine.com/temoignages.html</loc></url>
-  <url><loc>https://ton-domaine.com/sapin-baumier.html</loc></url>
-
+  <url><loc>https://sapino.com/index.html</loc></url>
+  <url><loc>https://sapino.com/produits.html</loc></url>
+  <url><loc>https://sapino.com/entreprise.html</loc></url>
+  <url><loc>https://sapino.com/temoignages.html</loc></url>
+  <url><loc>https://sapino.com/sapin-baumier.html</loc></url>
+  <url><loc>https://sapino.com/produits/gomme-de-sapin-naturel-30</loc></url>
+  <url><loc>https://sapino.com/produits/gomme-de-sapin-naturel-60</loc></url>  
+  <url><loc>https://sapino.com/produits/mini-pastille-fraicheur</loc></url>
+  <url><loc>https://sapino.com/produits/pastille-extra-forte</loc></url>  
+  <url><loc>https://sapino.com/produits/pastille-sapin-baumier-thym</loc></url>
+  <url><loc>https://sapino.com/produits/pastille-sapin-echinacee</loc></url>  
+  <url><loc>https://sapino.com/produits/sirop-d-antan-extra</loc></url>
+  <url><loc>https://sapino.com/produits/sirop-echinacee</loc></url>
+  <url><loc>https://sapino.com/produits/sirop-pour-enfant</loc></url>  
   <!-- Pages EN -->
-  <url><loc>https://ton-domaine.com/EN/homepage.html</loc></url>
-  <url><loc>https://ton-domaine.com/EN/product.html</loc></url>
-  <url><loc>https://ton-domaine.com/EN/balsam-fir.html</loc></url>
-  <url><loc>https://ton-domaine.com/EN/company.html</loc></url>
-  <url><loc>https://ton-domaine.com/EN/testimonials.html</loc></url>
+  <url><loc>https://sapino.com/en/homepage.html</loc></url>
+  <url><loc>https://sapino.com/en/product.html</loc></url>
+  <url><loc>https://sapino.com/en/balsam-fir.html</loc></url>
+  <url><loc>https://sapino.com/en/company.html</loc></url>
+  <url><loc>https://sapino.com/en/testimonials.html</loc></url>
+  <url><loc>https://sapino.com/en/product/balsam-fir-gum-30</loc></url>
+  <url><loc>https://sapino.com/en/product/balsam-fir-gum-60</loc></url>
+  <url><loc>https://sapino.com/en/product/childrens-syrop-100</loc></url>
+  <url><loc>https://sapino.com/en/product/mini-lozenges-of-balsam-fir</loc></url>
+  <url><loc>https://sapino.com/en/product/extra-strong-balsam-fir-lozenges-30</loc></url>
+  <url><loc>https://sapino.com/en/product/fir-and-echinacea-lozenges-30</loc></url>
+  <url><loc>https://sapino.com/en/product/fir-and-echinacea-syrop-250</loc></url>
+  <url><loc>https://sapino.com/en/product/fir-and-thyme-lozenges-30</loc></url>
+  <url><loc>https://sapino.com/en/product/natural-old-time-syrup-500</loc></url>
 </urlset>
